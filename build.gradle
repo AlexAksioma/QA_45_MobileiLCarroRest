@@ -12,6 +12,9 @@ repositories {
 dependencies {
     implementation 'org.testng:testng:7.4.0'
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.4.0'
+// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+   // implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-alpha-1'
 
     compileOnly 'org.projectlombok:lombok:1.18.28'
     annotationProcessor 'org.projectlombok:lombok:1.18.28'
