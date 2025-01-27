@@ -35,7 +35,5 @@ public class RegistrationScreen extends BaseScreen {
         btnRegistration.click();
     }
 
-    public boolean validateMessageSuccess(String message){
-        return textInElementPresent(popUpMessageSuccess, message, 5);
-    }
+
 }
