@@ -1,13 +1,13 @@
 package ui_mobile;
 
 import config.AppiumConfig;
+import dto.CarDTO;
 import dto.UserDTO;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import screens.LoginScreen;
-import screens.MyCarsScreen;
-import screens.SearchScreen;
-import screens.SplashScreen;
+import screens.*;
+
+import static helper.RandomUtils.*;
 
 public class AddNewCarTests extends AppiumConfig {
 
@@ -31,6 +31,19 @@ public class AddNewCarTests extends AppiumConfig {
 
     @Test
     public void addNewCarPositiveTest(){
+        CarDTO car = CarDTO.builder()
+                .serialNumber("num-"+generatePhone(6))
+                .manufacture("ZAZ")
+                .model("969")
+                .city("Haifa")
+                .pricePerDay(333.33)
+                .carClass("Hi")
+                .fuel("Gas")
+                .year("1975")
+                .seats(4)
+                .about("best of the best")
+                .build();
         new MyCarsScreen(driver).goToAddNewCarScreen();
+        new AddNewCarScreen(driver).addNewCar(car);
     }
 }
