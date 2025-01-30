@@ -66,8 +66,8 @@ public class AddNewCarTests extends AppiumConfig {
                 .about("best of the best")
                 .build();
         myCarsScreen = new MyCarsScreen(driver);
-        //myCarsScreen.goToAddNewCarScreen();
-        //new AddNewCarScreen(driver).addNewCar(car);
-        myCarsScreen.scrollToLastElementAuto();
+        myCarsScreen.goToAddNewCarScreen();
+        new AddNewCarScreen(driver).addNewCar(car);
+        Assert.assertEquals(myCarsScreen.scrollToLastElementAuto(), car.getSerialNumber());
     }
 }
