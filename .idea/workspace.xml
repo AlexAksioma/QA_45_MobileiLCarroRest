@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8757157f-40c7-4e6b-96ea-31025b9ee0d7" name="Changes" comment="added reg and login">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/BookedDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/CarDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewCarScreen.java" afterDir="false" />
+    <list default="true" id="8757157f-40c7-4e6b-96ea-31025b9ee0d7" name="Changes" comment="added add new car">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/AddNewCarTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737999025751</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added add new car">
+      <option name="closed" value="true" />
+      <created>1738004615231</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738004615231</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -256,7 +260,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="created splash test" />
     <MESSAGE value="added reg and login" />
-    <option name="LAST_COMMIT_MESSAGE" value="added reg and login" />
+    <MESSAGE value="added add new car" />
+    <option name="LAST_COMMIT_MESSAGE" value="added add new car" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
