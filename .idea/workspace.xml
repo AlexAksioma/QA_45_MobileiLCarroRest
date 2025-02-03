@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8757157f-40c7-4e6b-96ea-31025b9ee0d7" name="Changes" comment="added add new car">
+    <list default="true" id="8757157f-40c7-4e6b-96ea-31025b9ee0d7" name="Changes" comment="added delete car">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/SearchTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +75,8 @@
       <recent name="helper" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddNewCarTests.addNewCarPositiveTest">
-    <configuration name="AddNewCarTests.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SearchTests.searchPositiveTest_withCalendar">
+    <configuration name="AddNewCarTests.addNewCarPositiveTestValidateCarList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -86,7 +89,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.AddNewCarTests.addNewCarPositiveTest&quot;" />
+            <option value="&quot;ui_mobile.AddNewCarTests.addNewCarPositiveTestValidateCarList&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -97,7 +100,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginNegativeTest_emailWOAt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DeleteCarTests.deleteFirstCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -110,7 +113,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.LoginTests.loginNegativeTest_emailWOAt&quot;" />
+            <option value="&quot;ui_mobile.DeleteCarTests.deleteFirstCarPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -121,7 +124,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginNegativeTest_emailWithSpaces" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +137,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.LoginTests.loginNegativeTest_emailWithSpaces&quot;" />
+            <option value="&quot;ui_mobile.SearchTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -145,7 +148,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchTests.searchPositiveTest_withCalendar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,7 +161,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.LoginTests.loginPositiveTest&quot;" />
+            <option value="&quot;ui_mobile.SearchTests.searchPositiveTest_withCalendar&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,7 +172,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SplashTests.validateVersionApp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,7 +185,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.RegistrationTests.registrationPositiveTest&quot;" />
+            <option value="&quot;ui_mobile.SplashTests.validateVersionApp&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -195,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTest" />
-        <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
-        <item itemvalue="Gradle.LoginTests.loginNegativeTest_emailWOAt" />
-        <item itemvalue="Gradle.LoginTests.loginNegativeTest_emailWithSpaces" />
-        <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
+        <item itemvalue="Gradle.SearchTests.searchPositiveTest_withCalendar" />
+        <item itemvalue="Gradle.SearchTests" />
+        <item itemvalue="Gradle.SplashTests.validateVersionApp" />
+        <item itemvalue="Gradle.DeleteCarTests.deleteFirstCarPositiveTest" />
+        <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTestValidateCarList" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +255,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738004615231</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added scroll">
+      <option name="closed" value="true" />
+      <created>1738257854709</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738257854709</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added delete car">
+      <option name="closed" value="true" />
+      <created>1738263139689</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738263139689</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -261,7 +280,9 @@
     <MESSAGE value="created splash test" />
     <MESSAGE value="added reg and login" />
     <MESSAGE value="added add new car" />
-    <option name="LAST_COMMIT_MESSAGE" value="added add new car" />
+    <MESSAGE value="added scroll" />
+    <MESSAGE value="added delete car" />
+    <option name="LAST_COMMIT_MESSAGE" value="added delete car" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
