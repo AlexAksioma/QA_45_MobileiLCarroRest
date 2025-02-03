@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8757157f-40c7-4e6b-96ea-31025b9ee0d7" name="Changes" comment="added delete car">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/SearchTests.java" afterDir="false" />
+    <list default="true" id="8757157f-40c7-4e6b-96ea-31025b9ee0d7" name="Changes" comment="started find car">
+      <change afterPath="$PROJECT_DIR$/src/main/java/helper/HelperDate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/SearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,29 +76,18 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.SearchTests.searchPositiveTest_withCalendar">
-    <configuration name="AddNewCarTests.addNewCarPositiveTestValidateCarList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_mobile.AddNewCarTests.addNewCarPositiveTestValidateCarList&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="HelperDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="helper.HelperDate" />
+      <module name="QA_45_MobileiLCarroRest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="helper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="DeleteCarTests.deleteFirstCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -199,10 +188,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.SearchTests.searchPositiveTest_withCalendar" />
+        <item itemvalue="Application.HelperDate" />
         <item itemvalue="Gradle.SearchTests" />
         <item itemvalue="Gradle.SplashTests.validateVersionApp" />
         <item itemvalue="Gradle.DeleteCarTests.deleteFirstCarPositiveTest" />
-        <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTestValidateCarList" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738263139689</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="started find car">
+      <option name="closed" value="true" />
+      <created>1738603496374</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738603496374</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -282,7 +279,8 @@
     <MESSAGE value="added add new car" />
     <MESSAGE value="added scroll" />
     <MESSAGE value="added delete car" />
-    <option name="LAST_COMMIT_MESSAGE" value="added delete car" />
+    <MESSAGE value="started find car" />
+    <option name="LAST_COMMIT_MESSAGE" value="started find car" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

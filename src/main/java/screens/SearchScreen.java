@@ -8,6 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.Date;
+import java.util.Locale;
+
 public class SearchScreen extends BaseScreen {
     public SearchScreen(AppiumDriver<AndroidElement> driver) {
         super(driver);
@@ -33,6 +38,12 @@ public class SearchScreen extends BaseScreen {
     AndroidElement btnYalla;
     @FindBy(id = "android:id/button1")
     AndroidElement btnOkCalendar;
+    @FindBy(id = "android:id/next")
+    AndroidElement btnMonthNext;
+    @FindBy(id = "android:id/prev")
+    AndroidElement btnMonthPrev;
+    @FindBy(id = "android:id/date_picker_header_year")
+    AndroidElement btnYear;
 
 
     public void goToRegistrationScreen() {
@@ -67,6 +78,33 @@ public class SearchScreen extends BaseScreen {
 
     private void setDateCalendar(String dateStart) {
         //pause(3);
+        //March - 3   --> June 6 - 3 = 3 click
+        //02 March 2025    -->  [02] [March] [2025]
+        //
+        String[] arrayDate = dateStart.split(" ");
+        //=============== year
+        if (LocalDate.now().getYear() != Integer.parseInt(arrayDate[2])) {
+            clickWait(btnYear, 5);
+            new WebDriverWait(driver, 5)
+                    .until(ExpectedConditions.elementToBeClickable(
+                            By.xpath("//*[@text='" + arrayDate[2] + "']")
+                    )).click();
+        }
+        //=============== month
+        int month = returnNumOfMonth(arrayDate[1]);
+        int currentMonth = LocalDate.now().getMonthValue() + 1;
+        // 3  10 = 7      12   5 = -7
+        int quantityClick = month - currentMonth;  //+  -
+        if (quantityClick > 0)
+            for (int i = 0; i < quantityClick; i++) {
+                clickWait(btnMonthNext, 3);
+            }
+        else if (quantityClick < 0) {
+            for (int i = 0; i < Math.abs(quantityClick); i++) {
+                clickWait(btnMonthPrev, 3);
+            }
+        }
+        //============================ day
         new WebDriverWait(driver, 5)
                 .until(ExpectedConditions.elementToBeClickable
                         (By.xpath("//*[@content-desc='" + dateStart + "']")))
@@ -76,8 +114,13 @@ public class SearchScreen extends BaseScreen {
             new WebDriverWait(driver, 5)
                     .until(ExpectedConditions.invisibilityOfElementLocated
                             (By.id("android:id/button1")));
-        } catch (TimeoutException e){
+        } catch (TimeoutException e) {
             e.printStackTrace();
         }
+    }
+
+    private int returnNumOfMonth(String month) {
+        Month month1 = Month.valueOf(month.toUpperCase(Locale.ENGLISH));
+        return month1.getValue();
     }
 }
