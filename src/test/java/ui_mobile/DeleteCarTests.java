@@ -1,7 +1,11 @@
 package ui_mobile;
 
 import config.AppiumConfig;
+import config.CarController;
+import dto.CarsDto;
 import dto.UserDTO;
+import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import screens.LoginScreen;
@@ -31,7 +35,15 @@ public class DeleteCarTests extends AppiumConfig {
 
     @Test
     public void deleteFirstCarPositiveTest(){
+        CarController carController = new CarController();
+        carController.login();
+        Response responseBeforeTest = carController.getUserCars(carController.tokenDto.getAccessToken());
+        int quantityCarBeforeDelete = responseBeforeTest.body().as(CarsDto.class).getCars().length;
         myCarsScreen = new MyCarsScreen(driver);
         myCarsScreen.deleteFirstCar();
+        Response responseAfterTest = carController.getUserCars(carController.tokenDto.getAccessToken());
+        int quantityCarAfterDelete = responseAfterTest.body().as(CarsDto.class).getCars().length;
+        System.out.println(quantityCarBeforeDelete+"X"+quantityCarAfterDelete);
+        Assert.assertEquals(quantityCarBeforeDelete-1, quantityCarAfterDelete);
     }
 }

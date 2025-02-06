@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8757157f-40c7-4e6b-96ea-31025b9ee0d7" name="Changes" comment="started find car">
-      <change afterPath="$PROJECT_DIR$/src/main/java/helper/HelperDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" afterDir="false" />
+    <list default="true" id="8757157f-40c7-4e6b-96ea-31025b9ee0d7" name="Changes" comment="find car">
       <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/SearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -268,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738603496374</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="find car">
+      <option name="closed" value="true" />
+      <created>1738609306009</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738609306009</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -280,7 +285,8 @@
     <MESSAGE value="added scroll" />
     <MESSAGE value="added delete car" />
     <MESSAGE value="started find car" />
-    <option name="LAST_COMMIT_MESSAGE" value="started find car" />
+    <MESSAGE value="find car" />
+    <option name="LAST_COMMIT_MESSAGE" value="find car" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

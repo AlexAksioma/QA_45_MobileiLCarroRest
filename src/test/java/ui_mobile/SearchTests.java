@@ -18,6 +18,6 @@ public class SearchTests extends AppiumConfig {
     @Test
     public void searchPositiveTest_withCalendar(){
         searchScreen.findCarWithCalendar("Rehovot",
-                "10 March 2026", "12 April 2025");
+                "10 March 2026", "12 April 2026");
     }
 }
